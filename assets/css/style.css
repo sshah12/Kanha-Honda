@@ -1,20 +1,42 @@
 
-body{margin:0;font-family:Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#333;background:#fff}
+
+/* HEADER */
 .header{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;border-bottom:2px solid #e60000}
 .logo-area{display:flex;align-items:center;gap:10px}
-.logo{height:45px}
+.logo{height:40px}
 .brand{font-size:22px;color:#e60000}
 .nav a{margin-left:18px;text-decoration:none;font-weight:600;color:#333}
 .nav a:hover{color:#e60000}
-.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;padding:60px 40px}
-.hero-text h1{color:#e60000;font-size:36px}
-.tagline{font-size:18px;font-weight:600}
-.hero-buttons .btn{margin-right:12px}
+
+/* HERO */
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;padding:60px 40px}
+.hero-text h1{color:#e60000;font-size:34px}
+.hero-image img{width:100%;max-height:320px;object-fit:cover;border-radius:14px}
+
+/* BUTTON */
 .btn{background:linear-gradient(45deg,#e60000,#ff4d4d);color:#fff;padding:12px 26px;border-radius:30px;text-decoration:none;font-weight:600}
-.btn-outline{background:#fff;color:#e60000;border:2px solid #e60000}
-.bike-slider-section{padding:50px 0;background:#fafafa;text-align:center}
+
+/* SLIDER */
+.bike-slider-section{padding:40px 0;background:#fafafa;text-align:center}
 .bike-slider{overflow:hidden}
-.slide-track{display:flex;width:calc(250px * 10);animation:scroll 25s linear infinite}
-.slide-track img{width:250px;height:160px;margin:0 15px;object-fit:cover;border-radius:12px}
+.slide-track{display:flex;width:calc(220px * 10);animation:scroll 25s linear infinite}
+.slide-track img{width:220px;height:140px;margin:0 12px;object-fit:cover;border-radius:12px}
 @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;padding:14px 18px;border-radius:30px;font-weight:600;text-decoration:none}
+
+/* SERVICES – 4x4 cm approx */
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:25px;padding:50px}
+.service-card{text-align:center}
+.service-card img{width:150px;height:150px;object-fit:cover;border-radius:12px}
+.service-card p{margin-top:10px;font-weight:600}
+
+/* PORTFOLIO – 8x8 cm approx */
+.portfolio{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:35px;padding:50px}
+.portfolio img{width:300px;height:300px;object-fit:cover;border-radius:18px}
+
+/* FOOTER */
+footer{text-align:center;padding:20px;background:#111;color:#fff}
+
+/* WHATSAPP */
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25d366;color:#fff;padding:14px 18px;border-radius:30px;font-weight:600;text-decoration:none}
